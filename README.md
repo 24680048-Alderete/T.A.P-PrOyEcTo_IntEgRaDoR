@@ -36,7 +36,7 @@ Este proyecto consiste en una aplicación de escritorio/web desarrollada con Fle
 ### 🖼️ Captura de pantalla
 <img width="1327" height="416" alt="image" src="https://github.com/user-attachments/assets/8c3f111a-5cbc-4fdc-b5a9-f7afeb64e19e" />
 
-🧠 Explicación del código
+## 🧠 Explicación del código
 
 El archivo main.py contiene los siguientes bloques principales:
 
