@@ -257,7 +257,7 @@ ft.app(target=main, view=ft.AppView.WEB_BROWSER)
 
 - Se ejecuta la aplicación en el navegador web.
 
-##✨ Mejoras implementadas respecto al formulario base
+## ✨ Mejoras implementadas respecto al formulario base
 
 - Validación de campos vacíos en todos los campos obligatorios.
 - Validación de formato de email mediante expresión regular.
