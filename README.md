@@ -18,12 +18,13 @@ Este proyecto consiste en una aplicación de escritorio/web desarrollada con Fle
 - **Interfaz limpia y responsiva**, con colores suaves.
 
 ### 🖼️ Captura de pantalla
+<img width="1327" height="416" alt="image" src="https://github.com/user-attachments/assets/8c3f111a-5cbc-4fdc-b5a9-f7afeb64e19e" />
 
 🧠 Explicación del código
 
 El archivo main.py contiene los siguientes bloques principales:
 
-1. Importaciones y configuración inicial
+### 1. Importaciones y configuración inicial
 
 ```python
 import flet as ft
@@ -36,10 +37,10 @@ def main(page: ft.Page):
     page.theme_mode = ft.ThemeMode.LIGHT
 ```
 
-· Se importa flet (como ft) y re para expresiones regulares.
-· Se configura el título, color de fondo, padding y tema claro.
+- Se importa flet (como ft) y re para expresiones regulares.
+- Se configura el título, color de fondo, padding y tema claro.
 
-2. Diálogo de resumen (AlertDialog)
+### 2. Diálogo de resumen (AlertDialog)
 
 ```python
     dlg_resumen = ft.AlertDialog(
@@ -55,10 +56,10 @@ def main(page: ft.Page):
         page.update()
 ```
 
-· Se crea un AlertDialog vacío que se reutilizará para mostrar los datos.
-· Se define una función para cerrar el diálogo.
+- Se crea un AlertDialog vacío que se reutilizará para mostrar los datos.
+- Se define una función para cerrar el diálogo.
 
-3. Funciones de validación
+### 3. Funciones de validación
 
 ```python
     def validar_nombre(e):
@@ -90,10 +91,10 @@ def main(page: ft.Page):
         e.control.update()
 ```
 
-· Cada función valida el contenido del campo correspondiente y establece error_text para mostrar mensajes debajo del campo.
-· Se usa on_change para validar en tiempo real mientras el usuario escribe.
+- Cada función valida el contenido del campo correspondiente y establece error_text para mostrar mensajes debajo del campo.
+- Se usa on_change para validar en tiempo real mientras el usuario escribe.
 
-4. Controles de entrada con filtros
+### 4. Controles de entrada con filtros
 
 ```python
     txt_nombre = ft.TextField(
@@ -157,12 +158,12 @@ def main(page: ft.Page):
     )
 ```
 
-· input_filter en txt_nombre permite solo letras (incluyendo acentos y ñ) y espacios.
-· input_filter en txt_control permite solo dígitos, y se limita a 8 caracteres con max_length.
-· Los Dropdowns se crean con opciones predefinidas.
-· RadioGroup para género, organizado en una fila horizontal.
+- input_filter en txt_nombre permite solo letras (incluyendo acentos y ñ) y espacios.
+- input_filter en txt_control permite solo dígitos, y se limita a 8 caracteres con max_length.
+- Los Dropdowns se crean con opciones predefinidas.
+- RadioGroup para género, organizado en una fila horizontal.
 
-5. Función de envío
+### 5. Función de envío
 
 ```python
     txt_mensaje_error = ft.Text("", color="red", weight="bold")
@@ -195,11 +196,11 @@ def main(page: ft.Page):
         page.update()
 ```
 
-· Se comprueba que los campos obligatorios no estén vacíos y que el número de control tenga 8 dígitos.
-· Si hay error, se muestra un mensaje en rojo.
-· Si todo es correcto, se construye un texto resumen y se asigna al contenido del diálogo, luego se abre.
+- Se comprueba que los campos obligatorios no estén vacíos y que el número de control tenga 8 dígitos.
+- Si hay error, se muestra un mensaje en rojo.
+- Si todo es correcto, se construye un texto resumen y se asigna al contenido del diálogo, luego se abre.
 
-6. Botón de envío
+### 6. Botón de envío
 
 ```python
     btn_enviar = ft.ElevatedButton(
@@ -210,7 +211,7 @@ def main(page: ft.Page):
     )
 ```
 
-7. Armado de la interfaz
+### 7. Armado de la interfaz
 
 ```python
     page.overlay.append(dlg_resumen)
@@ -229,22 +230,22 @@ def main(page: ft.Page):
     )
 ```
 
-· Se agrega el diálogo al overlay para que pueda mostrarse.
-· Se organizan todos los controles en una columna vertical.
+- Se agrega el diálogo al overlay para que pueda mostrarse.
+- Se organizan todos los controles en una columna vertical.
 
-8. Ejecución
+### 8. Ejecución
 
 ```python
 ft.app(target=main, view=ft.AppView.WEB_BROWSER)
 ```
 
-· Se ejecuta la aplicación en el navegador web.
+- Se ejecuta la aplicación en el navegador web.
 
-✨ Mejoras implementadas respecto al formulario base
+##✨ Mejoras implementadas respecto al formulario base
 
-· Validación de campos vacíos en todos los campos obligatorios.
-· Validación de formato de email mediante expresión regular.
-· Filtros de entrada para evitar caracteres no deseados en nombre y número de control.
-· Menús desplegables para Carrera y Semestre.
-· Botones de opción para Género.
-· Ventana modal (AlertDialog) que muestra los datos ingresados al hacer clic en "Enviar".
+- Validación de campos vacíos en todos los campos obligatorios.
+- Validación de formato de email mediante expresión regular.
+- Filtros de entrada para evitar caracteres no deseados en nombre y número de control.
+- Menús desplegables para Carrera y Semestre.
+- Botones de opción para Género.
+- Ventana modal (AlertDialog) que muestra los datos ingresados al hacer clic en "Enviar".
