@@ -1,4 +1,20 @@
 # T.A.P-PrOyEcTo_IntEgRaDoR
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Git Bash](https://img.shields.io/badge/Git%20Bash-F05032?style=for-the-badge&logo=git&logoColor=white)  ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+### 
+> [!CAUTION]
+>   Requisitos **Python🐍 3.10** o anterioes.
+> 
+>   Pues checar tu versión de Python usando `py --doctor`.
+
+>[!NOTE]
+> 📥 DOWNLOAD
+>
+> [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/downloads/) 
+>
+> [![Git Bash](https://img.shields.io/badge/Git%20Bash-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/install/windows)
+> 
+
+> 
 Este proyecto consiste en una aplicación de escritorio/web desarrollada con Flet (Python) que implementa un formulario de registro de estudiantes, basado en la imagen adjunta, e incorpora validaciones de entrada y una ventana modal para mostrar los datos ingresados.
 
 ### 📋 Características
